@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_view"
+    app:layout_constraintBottom_toTopOf="@+id/shop_car_view"
+    >
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:sLeftTextString="@string/selectedGoods"
+        app:sRightTextString="@string/empty"
+        app:sUseRipple="false"
+        android:background="@color/toolbarBackground"
+        app:sLeftTextColor="@color/white"
+        app:sRightTextColor="@color/white"
+        android:id="@+id/bottom_superTextView"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_selected_good_rv" />
+</LinearLayout>

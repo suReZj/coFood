@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    android:id="@+id/item_shop_rv_right_contain">
+
+    <include layout="@layout/layout_sticky_header_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_shop_rv_right_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ic_launcher" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_toRightOf="@+id/item_shop_rv_right_image"
+    android:layout_alignTop="@id/item_shop_rv_right_image"
+    android:layout_marginLeft="10dp"
+    >
+        <TextView
+            android:id="@+id/item_shop_rv_right_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杏仁茶"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_shop_rv_right_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月售9份"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/item_shop_rv_right_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥5"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_shop_rv_right_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp">
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/item_shop_rv_right_reduce"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_remove_black_24dp"
+                app:cb_color="@color/colorPrimaryDark"
+                app:cb_pressedRingWidth="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/item_shop_rv_right_add"
+                android:text="2"
+                android:textSize="20sp"
+                android:id="@+id/item_shop_rv_right_selectSum"/>
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/item_shop_rv_right_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_add_black_24dp"
+                app:cb_color="@color/colorPrimaryDark"
+                app:cb_pressedRingWidth="4dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/item_bottom_goods_name"
+            android:text="商品名称商品名称商品名称"
+            android:textSize="20sp"
+            android:maxEms="8"
+            android:gravity="center"/>
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/item_bottom_goods_reduce"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_remove_black_24dp"
+            app:cb_color="@color/colorPrimaryDark"
+            app:cb_pressedRingWidth="4dp"
+            android:layout_toLeftOf="@id/item_bottom_goods_sum"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_bottom_goods_add"
+            android:text="222"
+            android:textSize="20sp"
+            android:textColor="@color/toolbarBackground"
+            android:id="@+id/item_bottom_goods_sum"
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/item_bottom_goods_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:cb_color="@color/colorPrimaryDark"
+            app:cb_pressedRingWidth="4dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/item_bottom_goods_price"
+            android:text="¥5"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@id/item_bottom_goods_reduce"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

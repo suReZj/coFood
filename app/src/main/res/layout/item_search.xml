@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp"
+    android:id="@+id/search_item">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/search_item_superText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:sDividerLineType="bottom"
+        app:sLeftIconHeight="50dp"
+        app:sLeftIconWidth="50dp"
+        app:sLeftViewGravity="left_center"
+        app:sRightViewGravity="right_center" />
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/search_item_superText"
+        android:layout_margin="10dp"
+        android:id="@+id/search_item_good1"
+        app:sLeftIconHeight="60dp"
+        app:sLeftIconWidth="60dp"
+        app:sLeftIconRes="@mipmap/ic_launcher"
+        app:sLeftViewGravity="left_center"
+        app:sLeftTopTextSize="20sp"
+        app:sRightViewGravity="right_center"
+        app:sRightTopTextColor="@color/red"
+        app:sRightTopTextSize="20sp"
+        app:sDividerLineType="bottom"
+        android:visibility="gone"
+        />
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/search_item_good1"
+        android:layout_margin="10dp"
+        android:id="@+id/search_item_good2"
+        app:sLeftIconHeight="60dp"
+        app:sLeftIconWidth="60dp"
+        app:sLeftIconRes="@mipmap/ic_launcher"
+        app:sLeftViewGravity="left_center"
+        app:sLeftTopTextSize="20sp"
+        app:sRightViewGravity="right_center"
+        app:sRightTopTextColor="@color/red"
+        app:sRightTopTextSize="20sp"
+        app:sDividerLineType="bottom"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入商家查看更多相似商品"
+        android:id="@+id/search_item_textView"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/search_item_good2"
+        android:padding="5dp"
+        android:visibility="gone"
+        />
+</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

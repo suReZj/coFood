@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_toolbar"
+        android:background="@color/toolbarBackground"
+        app:titleTextColor="@color/white"
+        />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/layout_user_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarBackground">
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ku"
+            />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/user_photo"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/user_name"
+            android:layout_below="@+id/user_name"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_chevron_right_black_24dp"
+            />
+    </RelativeLayout>
+
+
+    <!--<com.allen.library.SuperTextView-->
+        <!--android:id="@+id/my_place"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--app:sLeftIconRes="@drawable/ic_place_black_24dp"-->
+        <!--app:sLeftIconHeight="35dp"-->
+        <!--app:sLeftIconWidth="35dp"-->
+        <!--app:sLeftTextString="@string/my_place"-->
+        <!--app:sUseRipple="true"-->
+        <!--app:sDividerLineType="both"-->
+        <!--/>-->
+
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/my_stars"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftIconRes="@drawable/ic_star_black_24dp"
+        app:sLeftIconHeight="35dp"
+        app:sLeftIconWidth="35dp"
+        app:sLeftTextString="@string/my_stars"
+        app:sUseRipple="true"
+        app:sDividerLineType="both"
+        >
+    </com.allen.library.SuperTextView>
+
+
+    <com.allen.library.SuperTextView
+    android:id="@+id/merchant_entry"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:sLeftIconRes="@drawable/ic_merchant_entry_black_24dp"
+    app:sLeftIconHeight="35dp"
+    app:sLeftIconWidth="35dp"
+    app:sLeftTextString="@string/merchant_entry"
+    app:sUseRipple="true"
+    app:sDividerLineType="both"
+    >
+</com.allen.library.SuperTextView>
+
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/log_off"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftIconRes="@drawable/ic_power_settings_new_black_24dp"
+        app:sLeftIconHeight="35dp"
+        app:sLeftIconWidth="35dp"
+        app:sLeftTextString="@string/log_off"
+        app:sUseRipple="true"
+        app:sDividerLineType="both"
+        >
+    </com.allen.library.SuperTextView>
+</LinearLayout>

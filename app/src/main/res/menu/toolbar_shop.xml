@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+        <item
+            android:id="@+id/star"
+            android:title="收藏"
+            android:icon="@drawable/nostar"
+            app:showAsAction="always"/>
+        <!--<item-->
+            <!--android:id="@+id/call"-->
+            <!--android:title="联系商家"-->
+            <!--android:icon="@drawable/ic_call_black_24dp"-->
+            <!--app:showAsAction="always"/>-->
+        <item
+            android:id="@+id/share"
+            android:title="@string/share"
+            android:icon="@drawable/ic_share_black_24dp"
+            app:showAsAction="always"
+            />
+
+    </menu>

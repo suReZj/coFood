@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:src="@drawable/shape_dialog">
+
+    <ImageView
+        android:id="@+id/dialog_goods_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dialog_goods_image"
+        android:layout_alignRight="@id/dialog_goods_image"
+        android:layout_below="@id/dialog_goods_image"
+        android:background="@color/toolbarBackground"
+        >
+
+        <TextView
+            android:id="@+id/dialog_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:maxEms="6"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/dialog_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dialog_goods_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/dialog_goods_price"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp"
+    android:id="@+id/item_order">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/item_order_name"
+        app:sLeftIconHeight="35dp"
+        app:sLeftIconRes="@mipmap/ic_launcher"
+        app:sLeftIconWidth="35dp"
+        app:sLeftTextSize="20sp"
+        app:sRightTextSize="20sp">
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sDividerLineType="none"
+        android:id="@+id/item_order_good1"
+        android:visibility="gone"
+        >
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sDividerLineType="none"
+        android:id="@+id/item_order_good2"
+        android:visibility="gone"
+        >
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sDividerLineType="none"
+        android:id="@+id/item_order_good3"
+        android:visibility="gone"
+        >
+    </com.allen.library.SuperTextView>
+
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sLeftTextString="..."
+        android:id="@+id/item_order_price"
+        >
+    </com.allen.library.SuperTextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="end"
+        android:background="@color/white"
+        android:text="确认订单"
+        android:visibility="gone"
+        android:id="@+id/item_order_btn"
+        />
+</LinearLayout>
+</android.support.v7.widget.CardView>
